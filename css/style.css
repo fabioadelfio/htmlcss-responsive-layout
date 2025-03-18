@@ -17,7 +17,6 @@ img {
 }
 
 a {
-    text-decoration: none;
     color: inherit;
 }
 
@@ -179,6 +178,7 @@ ul {
     font-size: 18px;
     display: flex;
     justify-content: space-between;
+    gap: 60px;
 }
 
 .social .icon span {
@@ -187,8 +187,17 @@ ul {
 
 .social .icon {
     background-color: white;
+    text-align: center;
     border-radius: 30px;
-    padding: 10px 15px;
+    padding: 10px 0;
+    flex: 1 1 0;
+}
+
+/* ADVERTISING */
+
+.advertising {
+    width: 100%;
+    display: none;
 }
 
 /* DESCRIPTION */
@@ -219,4 +228,30 @@ ul {
     padding: 10px 0;
     font-size: 1.2rem;
     line-height: 35px;
+}
+
+    /* FOOTER */
+
+.page-footer {
+    background-color: #7C69A4;
+    color: white;
+    padding: 10px 40px;
+}
+
+.page-footer .info-company {
+    text-align: center;
+}
+
+.page-footer .info-company .name-company {
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.page-footer .links {
+    text-align: center;
+}
+
+.page-footer .links li {
+    display: inline-block;
+    padding: 10px 10px;
 }
