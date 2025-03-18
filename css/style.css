@@ -185,6 +185,7 @@ ul {
 
 .social .icon span {
     display: none;
+    font-weight: bold;
 }
 
 .social .icon {
@@ -308,6 +309,8 @@ ul {
 
     .description .description-content img {
         float: left;
+        margin-right: 10px;
+        margin-top: 10px;
     }
 
     .clearfix::after {
@@ -320,11 +323,55 @@ ul {
 /* DESKTOP */
 
 @media screen and (min-width: 992px) {
-    
-    .container{
-        padding-right: 4rem;
-        padding-left: 4rem;
+
+    .container {
+        max-width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
     }
     
     /* Card */
+
+    .card {
+        display: flex;
+    }
+
+    .card .video-card {
+        width: 70%;
+    }
+
+    .card .info-card {
+        width: 30%;
+    }
+
+    .info-card .info-list li {
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    /* Social */
+
+    .social .icon span {
+        display: inline-block;
+    }
+
+    /* Description */
+
+    .description .description-content p {
+        padding: 0;
+    }
+
+    /* Footer */
+
+    .page-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-footer .info-company {
+        text-align: left;
+    }
 }
