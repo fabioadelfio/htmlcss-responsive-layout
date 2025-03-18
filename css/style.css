@@ -7,7 +7,9 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 img {
@@ -73,7 +75,13 @@ ul {
     flex-direction: column;
 } */
 
-/* MOBILE */
+    /* MOBILE */
+
+/* HEADER */
+
+.page-header {
+    background-color: white;
+}
 
 .page-header h1 {
     color: #FF9614;
@@ -83,4 +91,36 @@ ul {
     font-style: normal;
     padding: 1rem;
     text-align: center;
+}
+
+/* MAIN */
+
+.page-content {
+    background-color: #F6F5F3;
+}
+
+.top-main {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.top-main .category {
+    color: #A89A99;
+}
+
+.top-main .title-content {
+    color: #4E3969;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card {
+    width: 100%;
+    display: block;
+}
+
+.card .video-card iframe{
+    width: 100%;
 }
