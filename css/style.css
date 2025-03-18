@@ -73,6 +73,14 @@ ul {
     flex-direction: column;
 } */
 
+/* MOBILE */
 
-
-
+.page-header h1 {
+    color: #FF9614;
+    font-size: 3rem;
+    font-family:"Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding: 1rem;
+    text-align: center;
+}
