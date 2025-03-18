@@ -133,10 +133,14 @@ ul {
     color: #A89A99;
 }
 
-.top-main .title-content {
+.top-main .top-title {
     color: #4E3969;
     font-size: 2rem;
     font-weight: bold;
+}
+
+.top-main .top-title span {
+    display: none;
 }
 
 /* CARD */
@@ -147,7 +151,7 @@ ul {
     display: block;
 }
 
-.card .video-card {
+.card .video-card img{
     width: 100%;
 }
 
@@ -162,13 +166,11 @@ ul {
 
 .info-card .info-list {
     padding-top: 25px;
-    display: block;
 }
 
-.info-card .info-list ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.info-card .info-list li {
+    padding: 10px 0;
+    width: 100%;
 }
 
 /* SOCIAL */
@@ -197,6 +199,7 @@ ul {
 
 .advertising {
     width: 100%;
+    padding-bottom: 30px;
     display: none;
 }
 
@@ -214,9 +217,7 @@ ul {
 }
 
 .description .description-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
     padding: 20px 0;
 }
 
@@ -225,6 +226,7 @@ ul {
 }
 
 .description .description-content p {
+    text-align: left;
     padding: 10px 0;
     font-size: 1.2rem;
     line-height: 35px;
@@ -254,4 +256,75 @@ ul {
 .page-footer .links li {
     display: inline-block;
     padding: 10px 10px;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        padding-right: 3rem;
+        padding-left: 3rem;
+    }
+
+    /* Header */
+
+    .page-header h1 {
+        text-align: left;
+    }
+
+    /* Top Main */
+
+    .top-main .top-title span {
+        display: inline-block;
+    }
+
+    /* Card */
+
+    .info-card .info-list ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0rem;
+    }
+
+    .info-card .info-list li {
+        width: calc(100% / 3);
+    }
+
+    /* Social */
+
+    .social {
+        gap: 25px;
+    }
+
+    /* Advertising */
+
+    .advertising {
+        display: block;
+    }
+
+    /* Description */
+
+    .description .description-content img {
+        float: left;
+    }
+
+    .clearfix::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 992px) {
+    
+    .container{
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+    
+    /* Card */
 }
